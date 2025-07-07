@@ -30,7 +30,7 @@ export default function ChatPage() {
 
   // const genAI = new GoogleGenerativeAI("AIzaSyAUiN5ckva3kznQjy5NR4sZAQRVlYo3u34")
   // const model = genAI.getGenerativeModel({ model: "gemini-pro" })
-  const ai = new GoogleGenAI({ apiKey: "AIzaSyAUiN5ckva3kznQjy5NR4sZAQRVlYo3u34" });
+  const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_API_KEY });
 
 
   const scrollToBottom = () => {
